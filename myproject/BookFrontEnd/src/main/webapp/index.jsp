@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <title>online book store</title>
 <meta charset="utf-8">
@@ -14,44 +13,13 @@
   .carousel-inner > .item > a > img {
  width:70% ;
       margin: auto;
-  }  
+  }
 </style>   
-</head>
-<center>
-<body class="bg-success">
-<h1>BOOK STORE</h1>
-<p>The site you can get your favourite books.</p>
-</div>
-
-<nav class="navbar navbar-inverse ">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Book store</a>
-    </div>
-    
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">categories
-        <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="#"> kids book</a></li>
-          <li><a href="#"> Youngsters and teens book</a></li>
-          <li><a href="#"> Text book</a></li>
-	  <li><a href="#"> Best selling book</a></li> 
-        </ul>
-      </li>
-      <li><a href="#">About us</a></li> 
-      <li><a href="#">Contact us</a></li> 
-    </ul>
-<ul class="nav navbar-nav navbar-right">
-      <li><a href="registrationpage.jsp"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="loginpage.jsp"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-    </ul>
-  </div>
-</nav>
+</head>    
+<body>
+<%@ include file="/views/header.jsp" %>
 <div class="container">
-  <br>
+ 
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -90,27 +58,6 @@
     </a>
   </div>
 </div>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<footer class="container-fluid text-center">
- <div class="row">
-    <div class="col-sm-4" style="background-color:lavender;">copy rights reserved</div>
-    <div class="col-sm-4" style="background-color:lavender;"><span class="glyphicon glyphicon-envelope"> <b>mail</b>:onlinestore@book.in</span> </div>
-    <div class="col-sm-4" style="background-color:lavenderblush;">
-    
-follow us @ <i class="fa fa-facebook"></i>       
-<i class="fa fa-flickr"></i>         
-<i class="fa fa-foursquare"></i>     
-<i class="fa fa-github"></i>         
-<i class="fa fa-google"></i>         
-<i class="fa fa-google-plus"></i>    
-<i class="fa fa-instagram"></i></div>
-  </div>
-</footer>
+<%@ include file="/views/footer.jsp" %>
 </body>
-</center>
 </html>
